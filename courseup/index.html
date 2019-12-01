@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/site.css">
+    <script src="https://kit.fontawesome.com/fc56aae322.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet"> 
+    <script src="JS/site.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>courseup</title>
+    <link rel="icon" href="IMG/fav-icon.png">
+</head>
+<body>
+    <nav>
+        <div class="espaco_img_menu">
+            <img class="img_menu_mobile" src="IMG/logo-1.png" alt="Logo Courseup">
+            <img class="img_menu_tablet" src="IMG/logo-2.png" alt="Logo Courseup">
+            <img class="img_menu_desktop" src="IMG/logo-3.png" alt="Logo Courseup">
+        </div>
+        <div id="myNav" class="overlay"> 
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <ul class="menu">
+                    <li class="itens_menu">
+                        <a href="index.html">Home</a>
+                        <a href="quem_somos.html">Quem Somos</a>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+    </nav>
+    <span class="titulo_menu" onclick="openNav()"> Menu &nbsp;&#9776;</span>
+    <main>
+        <section class="sessao_slide">
+                <div class="slides">
+                    <div class="meusSlides">
+                        <button class="botao botao_esq" onclick="mudarDiv(-1)">&#10094;</button>
+                        <img class="img_slide" src="IMG/slide1.jpg" alt="Uma mão digitando em um laptop.">
+                        <div class="texto_slide">
+                            <h2 class="texto_titulo_slide">Soluções Profissionais.</h2>
+                        </div>
+                        <button class="botao botao_dir" onclick="mudarDiv(1)">&#10095;</button>
+                    </div>
+                    <div class="meusSlides">
+                        <button class="botao botao_esq" onclick="mudarDiv(-1)">&#10094;</button>
+                        <img class="img_slide" src="IMG/slide2.jpg" alt="Três pessoas conversando sobre um gráfico que está sendo exibido ao fundo da imagem">
+                        <div class="texto_slide">
+                            <h2 class="texto_titulo_slide">Soluções Customizadas.</h2>
+                        </div>
+                        <button class="botao botao_dir" onclick="mudarDiv(1)">&#10095;</button>
+                    </div>
+                    <div class="meusSlides">
+                        <button class="botao botao_esq" onclick="mudarDiv(-1)">&#10094;</button>
+                        <img class="img_slide" src="IMG/slide3.jpg" alt="Uma imagem aproximada de uma mesa, durante uma reunião, onde só se observam as mãos das pessoas e um o laptop ao centro">
+                        <div class="texto_slide">
+                            <h2 class="texto_titulo_slide">Soluções Inovadoras.</h2>
+                        </div>
+                        <button class="botao botao_dir" onclick="mudarDiv(1)">&#10095;</button>
+                    </div>
+                </div>
+                    
+        </section>
+        <section>
+            <hr class="divisoria">
+
+            <div class="espaco_titulo_div">
+                <h2 class="titulo_div">
+                    PARA A COURSEUP, ESTAR PRESENTE É SE COMPROMETER COM SOLUÇÕES SOB-MEDIDA PARA SEUS CLIENTES
+                </h2>
+            </div>
+            <div class="setores">
+                <div class="setor">
+                    <div class="espaco_img_setor">
+                        <img class="img_setor" src="IMG/co-founder.png" alt="Icone">
+                    </div>
+                    <div class="texto_setor">
+                        Treinamentos que se adaptam as necessidades de sua empresa, proporcionando o melhor aprendizado aos seus colaboradores.
+                    </div>
+                </div>
+                <div class="setor">
+                    <div class="espaco_img_setor">
+                        <img  class="img_setor" src="IMG/presenter.png" alt="Icone">
+                    </div>
+                    <div class="texto_setor">
+                        Soluções inovadoras que otimizam o tempo de conclusão do treinamento, reduzindo custos.
+                    </div>
+                </div>
+                <div class="setor">
+                    <div class="espaco_img_setor">
+                        <img  class="img_setor" src="IMG/team.png" alt="Icone">
+                    </div>
+                    <div class="texto_setor">
+                        Capacite sua organização com programas de treinamento e desenvolvimento sob demanda.
+                    </div>
+                </div>
+                <div class="setor">
+                    <div class="espaco_img_setor">
+                        <img  class="img_setor" src="IMG/professions-and-jobs.png" alt="Icone">
+                    </div>
+                    <div class="texto_setor">
+                        Equipe especializada para realizar a configuração do ambiente virtual de aprendizagem. 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="fundo_setor">
+                <div class="titulo_setor">
+                    <h1>NOSSOS CLIENTES</h1>
+                </div>
+            </div>
+            <div class="clientes"> 
+                <div class="espaco_cliente">
+                    <img class="cliente" src="IMG/client1.jpg" alt="Pinterest">
+                </div>
+                <div class="espaco_cliente">
+                    <img class="cliente" src="IMG/client2.jpg" alt="Google">
+                </div>
+                <div class="espaco_cliente">
+                    <img class="cliente" src="IMG/client3.jpg" alt="Amazon">
+                </div>
+                <div class="espaco_cliente">
+                    <img class="cliente" src="IMG/client4.jpg" alt="HubSpot">
+                </div>
+                <div class="espaco_cliente">
+                    <img class="cliente" src="IMG/client5.jpg" alt="Hallmark">
+                </div>
+                <div class="espaco_cliente">
+                    <img class="cliente" src="IMG/client6.jpg" alt="Asus">
+                </div>
+                <div class="espaco_cliente">
+                    <img class="cliente" src="IMG/client7.jpg" alt="Sky">
+                </div>
+                <div class="espaco_cliente">
+                    <img class="cliente" src="IMG/client8.jpg" alt="Mercado Pago">
+                </div>                                   
+                <div class="espaco_cliente">
+                    <img class="cliente" src="IMG/client9.jpg" alt="Melissa">
+                </div>
+                <div class="espaco_cliente">
+                    <img class="cliente" src="IMG/client10.jpg" alt="Pichau">
+                </div>                                                                
+            </div>
+        </section>
+    </main>
+    <footer>
+            <div class="barra_links">
+                <a class="cor_footer" href="https://www.facebook.com" target="blanck" title="Facebook"><i class="fab fa-facebook-f fa-2x" style="margin-right: 0.5em"></i></a>
+                <a class="cor_footer" href="https://www.instagram.com" target="blanck" title="Instagram"><i class="fab fa-instagram fa-2x" style="margin-right: 0.5em"></i></a>
+                <a class="cor_footer" href="https://www.twitter.com" target="blanck" title="Twitter"><i class="fab fa-twitter fa-2x" style="margin-right: 0.5em"></i></a>
+                <a class="cor_footer" href="https://github.com/" target="blanck" title="GitHub"><i class="fab fa-github-alt fa-2x" style="margin-right: 0.5em"></i></a>
+            </div>
+                
+            <div class="barra_nome">
+                <!--@--> &copy; courseup 2019
+            </div>
+        </footer>           
+    </body>
+    <script src="JS/site.js"></script>
+
+    </html>
+
+

@@ -1,0 +1,677 @@
+main{
+    margin-top:2%;
+}
+
+body{
+    background-color: white;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: #4c4d4cfb; 
+    overflow-x: hidden;
+    transition: 0.5s; 
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 1.8em; 
+}
+  
+.overlay a {
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #E6EBE9;
+    display: block; 
+    transition: 0.3s;
+    font-family: 'Quicksand', sans-serif;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #969595;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 0.25em;
+    right: 1.5em;
+    font-size: 3.75em;
+}
+
+.titulo_menu{
+    font-size:1.5em;
+    cursor:pointer;
+    text-align: center;
+    background-color: #4C4D4C;
+    color: #E6EBE9; 
+    width: 100%;
+    display: inline-block;
+    letter-spacing: 0.2em;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.meusSlides {
+    display:none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_slide{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slides{
+    position:relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.botao{
+    border:none;
+    display:inline-block;
+    padding:0.5em 1em;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    background-color:transparent;
+    font-size: 2em;
+    color: #969595;
+}
+
+.botao:hover{
+    color:#000000;
+}    
+
+.botao_esq{
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+}
+
+.botao_dir{
+    position:absolute;
+    top:50%;
+    right:0%;
+    transform:translate(0%,-50%);
+}
+
+.texto_slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Quicksand', sans-serif;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.espaco_titulo_div{
+    width: 40%;
+    height: 20%;
+    margin-left:30%;
+    margin-right:30%;
+    text-align: center;
+}
+
+.titulo_div{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.divisoria{
+    border: 0;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: 0px;
+    border-top: 1px solid #3c4d5896;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom:2%;
+}
+
+.setores{
+    display:flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    margin-left:10%;
+    margin-right:10%;
+    text-align: center;
+    margin-top:5%;
+    margin-bottom: 5%;
+    width: 80%;
+}
+
+.setor{
+    margin:6%;
+    flex-grow: 3;
+    flex-basis: 0;
+}
+
+.texto_setor{
+    width: auto;
+    font-family:'Quicksand', sans-serif;
+}
+
+.img_setor{
+    height: auto;
+    width: auto;
+}
+
+.fundo_setor{
+    background-color: transparent;
+    background-image: url("../IMG/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.titulo_setor{
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 1.7em;
+    padding: 3em;
+}
+
+.espaco_cliente{
+    margin: 3%;
+    text-align: center;
+    flex-basis: 0;
+}
+
+.clientes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.cliente{
+    opacity: 30%;
+}
+
+.cliente:hover{
+    opacity: 100%;
+}
+
+footer{
+    grid-area: ft;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.barra_links{
+    background-color: #56a8f1;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    margin: 0;
+}
+
+.barra_nome{
+    background-color: #4D4D4D;
+    width: 100%;
+    font-size: 1.3em;
+    font-family: 'Quicksand', sans-serif;
+    color: #E6EBE9;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    margin: 0;
+}
+
+.cor_footer{
+    color:#E6EBE9;
+}
+
+.img_menu_mobile{
+    float: left;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.img_menu_tablet{
+    display: none;
+}
+
+.img_menu_desktop{
+    display: none;
+}
+
+.titulo_sessao{
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1.5em;
+}
+
+.sobre_nos{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.linha1{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+}
+
+.img_sobre_nos1{
+    width: 90%;
+    align-self: center;
+}
+
+.img_escritorio1{
+    width: 100%;
+    opacity: 30%;
+}
+
+.texto_sobre_nos{
+    font-family: 'Quicksand', sans-serif;
+    width: 90%;
+    font-size: 1em;
+    line-height: 1.4;
+    align-self: center;
+    text-align: center;
+}
+
+.linha2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    margin-top: 4%;
+    margin-bottom: 4%; 
+}
+
+.img_sobre_nos2{
+    width: 90%;
+    align-self: center;
+}
+
+.img_escritorio2{
+    width: 100%;
+    opacity: 30%;
+}
+
+.sessao_equipe{
+    margin-top:2%;
+}
+
+.fundo_setor_equipe{
+    background-image: url("../IMG/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.equipe{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+}
+
+.membro_equipe{
+    width: 40%;
+    border-bottom: #4D4D4D;
+    border-style: solid;
+    border-bottom-width: thin;
+}
+
+.espaco_img_equipe{
+    width: 100%;
+}
+
+.img_equipe{
+    width: inherit;
+    opacity: 60%;
+}
+
+.texto_equipe{
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1em;
+    line-height: 1.3em;
+    padding: 2%;
+}
+
+.cargo_equipe{
+    color: #56a8f1;
+}
+
+.sessao_formulario{
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-image: url("../IMG/background3.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+.titulo_form{
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.formulario{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+}
+
+legend{
+    font-family: 'Fjalla One', sans-serif;
+    font-size:1em;
+    padding: 1em;
+}
+
+textarea{
+    font-family: 'Quicksand', sans-serif;
+    height: 15em;
+    width: 20em;
+}
+
+input[type=text],[type=email]{
+    width: 16em;
+    height: 2em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.botao{
+    font-family: 'Fjalla One', sans-serif;
+    color: #e6ebe9;
+    font-size: 1em;
+    background-color:  #4d4d4d;
+    border-radius: 5px;
+}
+
+.sessao_endereco{
+    margin-bottom: 5%;
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.titulo_end{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+.end{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.mapa_end{
+    width: 100%;
+    height: 100%;
+}
+
+.mapa{
+    width: inherit;
+    height: inherit;
+}
+
+.divisao_end{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.mapa_endereco{
+    width: 20em;
+    height: 20em;
+}
+
+
+@media screen and (min-width: 750px){
+
+    .titulo_menu{
+        display: none;
+    }
+
+    .menu{
+        height: 6em;
+        width: 100%;
+        background-color: #4d4d4d;
+    }
+
+    ul{
+        list-style-type: none;
+        font-size: 0.8em;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        letter-spacing: 0.08em;
+        top: 0;
+
+    }
+    
+    li{
+        float: right;
+        font-family: 'Quicksand', sans-serif;
+        margin-block: 1em;
+    }
+    
+    .overlay a {
+        display: inline; 
+    }
+   
+    .texto_slide {
+        font-size: 2.5em;
+    }
+
+    .botao{
+        font-size: 2.5em;
+    }
+    
+    .titulo_div{
+        font-size: 1.4em;
+    }
+
+    .setores{
+        flex-direction: row;
+    }
+
+    .titulo_setor{
+        font-size: 2em;
+    }
+
+    .img_menu_mobile{
+        display: none;
+    }
+
+    .img_menu_desktop{
+        display: none;
+    }
+
+    .img_menu_tablet{
+        display: block;
+        top: 0;
+        position: fixed;
+        z-index: 1000;
+        margin-left: 2%;
+        height: 4.8em;
+    }
+
+    main{
+        margin-top:12%;
+    }
+
+    .texto_sobre_nos{
+        font-size: 1.2em;
+    }
+
+    .equipe{
+        flex-flow: row wrap;
+    }
+
+    .membro_equipe{
+        width: 35%;
+    }
+
+    input[type="text"], [type="email"] {
+        width: 38em;
+        font-size: 0.7em;
+    }
+    
+    textarea {
+        font-family: 'Quicksand', sans-serif;
+        height: 15em;
+        width: 38em;
+    }
+
+    .botao{
+        font-size: 1em;
+    }
+
+    .titulo_end{
+        font-size: 1.3em;
+    }
+
+    .end {
+        font-size: 1.2em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .mapa_endereco {
+        width: 30em;
+        height: 30em;
+        align-self: center;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .titulo_div{
+        font-size: 1.8em;
+    }
+
+    .texto_slide {
+        font-size: 3em;
+    }
+
+    .titulo_setor{
+        font-size: 2.5em;
+    }
+   
+    .espaco_img_menu{
+        height: inherit;
+    }
+    
+    .img_menu_tablet, .img_menu_mobile{
+        display: none;
+    }
+
+    .img_menu_desktop{
+        height: 4.8em;
+        float: left;
+        top: 0;
+        position: fixed;
+        z-index: 1000;
+        margin-left:2%;
+        display: block;
+    }
+
+    main{
+        margin-top:8%;
+    }
+
+    .titulo_sessao {
+        font-size: 2em;
+    }
+
+    .texto_sobre_nos{
+        font-size: 1.4em;
+    }
+
+    .linha1{
+        flex-flow: row wrap;
+    }
+    
+    .img_sobre_nos1{
+        width: 30%;
+    }
+    
+   .texto_sobre_nos{
+        width: 50%;
+    }
+    
+    .img_sobre_nos2{
+        width: 30%;
+    }
+
+    .linha2{
+        flex-flow: row wrap;
+    }
+
+    .membro_equipe{
+        width: 15%;
+    }
+
+    .mapa_end {
+        width: 100%;
+        height: 100%;
+    }
+
+    .titulo_form{
+        font-size: 2em;
+    }
+    
+    .mapa_endereco{
+        width: 30em;
+        height: 30em;
+    }
+    
+    .endereco_escrito{
+        font-size: 1.4em;
+    }
+
+    .sessao_formulario{
+        margin-bottom: 0%;
+    }
+
+    .divisao_end{
+        flex-direction: row;
+    }
+}    
+
