@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/site.css">
+    <script src="https://kit.fontawesome.com/fc56aae322.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet"> 
+    <script src="JS/site.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>courseup</title>
+    <link rel="icon" href="IMG/fav-icon.png">
+</head>
+<body>
+    <nav>
+        <div class="espaco_img_menu">
+            <img class="img_menu_mobile" src="IMG/logo-1.png" alt="Logo Courseup">
+            <img class="img_menu_tablet" src="IMG/logo-2.png" alt="Logo Courseup">
+            <img class="img_menu_desktop" src="IMG/logo-3.png" alt="Logo Courseup">
+        </div>
+        <div id="myNav" class="overlay"> 
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <ul class="menu">
+                    <li class="itens_menu">
+                        <a href="index.html">Home</a>
+                        <a href="quem_somos.html">Quem Somos</a>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+    </nav>
+    <span class="titulo_menu" onclick="openNav()"> Menu &nbsp;&#9776;</span>
+    <main>
+        <section class="sessao_formulario">
+            <h1 class="titulo_form">Entre em contato conosco</h1>
+            <div class="formulario">
+                <form action="/contato.html">
+                    <fieldset>
+                        <legend>Dados pessoais</legend>
+                        <label for="nome">Nome </label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" autofocus required>
+                        <br>
+                        <br>
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" placeholder="email@email.com.br" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Assunto</legend>
+                        <input type="radio" name="opcao" value="duvida"> Dúvida
+                        <input type="radio" name="opcao" value="sugestao"> Sugestão
+                        <br>
+                        <br>
+                        <input type="radio" name="opcao" value="outra"> Outra
+                        <input type="text" id="outra" name="outra">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Mensagem</legend>
+                        <textarea name="mensagem" placeholder="Digite aqui a sua mensagem" rows="16" cols="40"></textarea>
+                        <br>
+                        <br>
+                    </fieldset>
+                    <br>
+                    <input class="botao" type="submit" value="Enviar">
+                </form> 
+            </div>
+        </section>
+        <hr class="divisoria">
+        <section class="sessao_endereco">
+            <h1 class="titulo_sessao">Onde nos encontrar</h1>
+            <div class="divisao_end">
+                <div class="endereco_escrito">
+                    <h3 class="titulo_end">Nosso endereço</h3>
+                    <div class="end">
+                        <p>R. Leopoldo Couto de Magalhães Júnior, 758</p>
+                        <p>Itaim Bibi</p>
+                        <p>São Paulo</p>
+                        <p>CEP: 04542-000</p>
+                    </div>
+                </div>
+                <div class="mapa_endereco">
+                    <div class="mapa_end">
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.1137787409847!2d-46.68094807077785!3d-23.588005499041834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5744ab0ccfbf%3A0x2f09cf202f859105!2sR.%20Leopoldo%20Couto%20De%20Magalh%C3%A3es%20J%C3%BAnior%2C%20758!5e0!3m2!1spt-BR!2sbr!4v1575232721664!5m2!1spt-BR!2sbr" 
+                        style="border:none;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <div class="barra_links">
+                <a class="cor_footer" href="https://www.facebook.com" target="blanck" title="Facebook"><i class="fab fa-facebook-f fa-2x" style="margin-right: 0.5em"></i></a>
+                <a class="cor_footer" href="https://www.instagram.com" target="blanck" title="Instagram"><i class="fab fa-instagram fa-2x" style="margin-right: 0.5em"></i></a>
+                <a class="cor_footer" href="https://www.twitter.com" target="blanck" title="Twitter"><i class="fab fa-twitter fa-2x" style="margin-right: 0.5em"></i></a>
+                <a class="cor_footer" href="https://github.com/" target="blanck" title="GitHub"><i class="fab fa-github-alt fa-2x" style="margin-right: 0.5em"></i></a>
+            </div>
+                
+            <div class="barra_nome">
+                <!--@--> &copy; courseup 2019
+            </div>
+        </footer>           
+    </body>
+    <script src="JS/site.js"></script>
+
+    </html>
+
+
